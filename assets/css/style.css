@@ -21,7 +21,7 @@
    */
 
   --rich-black-fogra-29_50: hwb(210 8% 86% / 0.5);
-  --rich-black-fogra-29-1: #d2b2a6;
+  --rich-black-fogra-29-1: #FCE6F4;
   --rich-black-fogra-29-2: hsl(210, 50%, 4%);
   --silver-metallic: hsl(212, 9%, 67%);
   --coquelicot_20: hsla(12, 98%, 52%, 0.2);
@@ -29,12 +29,22 @@
   --sonic-silver: hsl(0, 0%, 47%);
   --cadet-gray: hsl(214, 15%, 62%);
   --light-gray: hsl(0, 0%, 80%);
-  --coquelicot: #423452;
+  --coquelicot: #B19CD9;
+  --coquelicot-button: #C1C1DE;
+  --lightred: #F6CCD5;
   --gainsboro: hsl(0, 0%, 88%);
   --white_20: hsl(0, 0%, 100%, 0.2);
-  --white_10: hsl(0, 0%, 100%, 0.1);
+  --white_10: hsla(0, 0%, 100%, 0.1);
   --black_10: hsl(0, 0%, 0%, 0.1);
   --white: hsl(0, 0%, 100%);
+
+
+  /**
+  * new colors
+  */
+
+  --light-red: hwb(210 8% 86% / 0.5);
+
 
   /**
    * typography
@@ -376,7 +386,11 @@ body {
   display: flex;
   align-items: center;
   margin-inline-start: -8px;
+  text-shadow: 0 0 10px #eeda84, 0 0 20px #93c9d5, 0 0 25px #93c9d5, 0 0 30px #93c9d5, 0 0 40px #4d74df;
 }
+
+
+
 
 .logo ion-icon {
   color: var(--coquelicot);
@@ -509,7 +523,7 @@ body {
   width: 280px;
 }
 
-.hero .abs-img { animation: move 3s linear infinite alternate; }
+.hero .abs-img { animation: move 5s linear infinite alternate; }
 
 @keyframes move {
   0% { transform: translate(0, 0); }
